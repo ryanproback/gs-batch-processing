@@ -1,10 +1,9 @@
 package com.example.batchprocessing;
 
-import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@EnableBatchProcessing // BatchAutoConfiguration 등록이 안되게 하여, JobLauncherApplicationRunner 가 실행되지 않음.
+// @EnableBatchProcessing // BatchAutoConfiguration 등록이 안되게 하여, JobLauncherApplicationRunner 가 실행되지 않음.
 @SpringBootApplication
 public class BatchProcessingApplication {
 

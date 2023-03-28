@@ -1,6 +1,19 @@
 package com.example.batchprocessing;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
 public class Person {
+    public Long getPersonId() {
+        return personId;
+    }
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long personId;
     private String lastName;
     private String firstName;
 
